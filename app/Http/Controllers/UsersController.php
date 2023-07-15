@@ -71,7 +71,9 @@ class UsersController extends Controller
      * Remove the specified resource from storage.
      */
     public function destroy(string $id) {
-        $user = User::destroy($id);
-        return "User succesfully deleted.";
+        $user = User::findOrFail($id);
+        $user->status = 'inactive';
+        $user->save();
+        return redirect('');
     }
 }

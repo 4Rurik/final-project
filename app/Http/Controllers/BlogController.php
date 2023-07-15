@@ -51,9 +51,9 @@ class BlogController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
-    {
-        //
+    public function edit(string $id) {
+        $blog = Blog::findOrFail($id);
+        return view('', ['data' => $blog]);
     }
 
     /**
@@ -69,7 +69,9 @@ class BlogController extends Controller
      * Remove the specified resource from storage.
      */
     public function destroy(string $id) {
-        $blog = Blog::destroy($id);
-        return "Post successfully deleted.";
+        $blog = Blog::findOrFail($id);
+        $blog->status = 'inactive';
+        $blog->save();
+        return redirect('');
     }
 }
