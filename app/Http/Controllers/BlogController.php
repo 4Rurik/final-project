@@ -33,7 +33,7 @@ class BlogController extends Controller
             'title' => 'required',
             'content' => 'required',
             'categoty' => 'required',
-        ]);
+        ]); 
 
         $blog = Blog::create($request->all());
         return response()->json($blog,201);
