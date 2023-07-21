@@ -33,7 +33,6 @@ class BlogController extends Controller
             'title' => 'required',
             'content' => 'required',
             'categoty' => 'required',
-            'image_url' => 'required',
         ]);
 
         $blog = Blog::create($request->all());
