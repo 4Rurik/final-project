@@ -1,0 +1,37 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+
+body {
+    background-color:#1C676C ;
+}
+
+.Section1 {
+    padding: 50px 40px;
+    background-color: red;
+}
+
+.Encabezado {
+    text-align: center;
+    color: #EAFDE7;
+    margin-top: 150px;
+}
+
+.Encabezado>h1 {
+    font-size: 3rem;
+}
+
+.Encabezado>h2 {
+    margin-top: 25px;
+    font-size: 1.25rem;
+}
+
+.Blogsrecientes {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 30px;
+    background-color: blue;
+    width: 100%;
+    justify-content: space-between;
+
+}
