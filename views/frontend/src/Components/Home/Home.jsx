@@ -13,9 +13,6 @@ import CardGroup from 'react-bootstrap/CardGroup';
 
 
 
-
-
-
 const Home = () => {
 
   return (
@@ -83,10 +80,7 @@ const Home = () => {
     
     <br />
 
-    
-
-
-      <br />
+    <br />
       <Carousel>
             <Carousel.Item>
             <Card>
@@ -102,31 +96,19 @@ const Home = () => {
           </Card>
             </Carousel.Item>
             <Carousel.Item>
-                               <Carousel.Caption>
-                    <h3>¡Conocimos Berlín!</h3>
-                    <p>Mi novio y yo fuimos a conocer la ciudad de unos amigos en Alemania.</p>
-                </Carousel.Caption>
+            <Card>
+        <Card.Body>
+          <Card.Title>Username2</Card.Title>
+          <Card.Text>
+            Me llamo xxx y este verano me voy de gira a Europa con mis amigos.{' '}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
             </Carousel.Item>
             <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={ tripgt }
-                    alt="Third slide"
-                />
-
-                <Carousel.Caption>
-                    <h3>Nos vinimos a Guatemala</h3>
-                    <p>
-                        Luego de un año de trabajo decidí por fin salir del país.
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src= { tripko }
-                    alt="Fourth slide"
-                />
                 <Carousel.Caption>
                     <h3>Mis aventuras en Seúl</h3>
                     <p>¡Por fín comeré auténtica comida coreana!</p>
