@@ -12,7 +12,12 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 
 
+
+
+
+
 const Home = () => {
+
   return (
     <div>
     
@@ -152,5 +157,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;
