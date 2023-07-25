@@ -5,7 +5,7 @@ const NavBar = () => {
         <nav className="navbar navbar-dark bg-dark">
         <div className="container">
             <NavLink to="/" className="btn btn-outline-primary">Home</NavLink>
-            <NavLink to="/Blog" className="btn btn-outline-primary">Blog</NavLink>
+            <NavLink to="/Blog" className="btn btn-outline-primary">Blogs</NavLink>
         </div>
         </nav>
         </>

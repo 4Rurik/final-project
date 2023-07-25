@@ -1,3 +1,8 @@
-index{
-  background-color: #3b3b3b;
+
+body {
+  background-color:#325343;
+}
+
+main {
+  min-height: 100vh;
 }

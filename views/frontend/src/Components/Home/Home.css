@@ -1,12 +1,8 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
 
-body {
-    background-color:#1C676C ;
-}
 
 .Section1 {
     padding: 50px 40px;
-    background-color: red;
 }
 
 .Encabezado {
@@ -24,14 +20,33 @@ body {
     font-size: 1.25rem;
 }
 
-.Blogsrecientes {
+.card-group {
     margin-top: 60px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
+    gap: 30px;
     padding: 30px;
-    background-color: blue;
     width: 100%;
-    justify-content: space-between;
+    justify-content:space-between;
+}
 
+.Blogsrecientes {
+   max-width: 400px;
+   padding: 10px;
+   background-color:#387849;
+}
+
+.card>img {
+    height: 200px;
+}
+
+.section2 {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.userslide {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #F7E06B;
 }
