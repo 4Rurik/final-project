@@ -8,7 +8,7 @@ const LayoutPublic = ()=>{
         <main className="container">
             <Outlet/>
         </main>
-       
+   
         </>
     );
 };
