@@ -2,14 +2,23 @@
 
 namespace Tests\Unit\Helpers;
 
+use App\Models\User;
 use PHPUnit\Framework\TestCase;
 
-class UserModel extends TestCase
+class UserModelTest extends TestCase
 {
     /**
-     * A basic unit test example.
+     * A basic unit test.
      */
-    public function test_example(): void
+    public function test_blog(): void
+    {
+        $this->assertTrue(true);
+    }
+
+    /**
+     * A basic unit test.
+     */
+    public function test_commentUser(): void
     {
         $this->assertTrue(true);
     }
