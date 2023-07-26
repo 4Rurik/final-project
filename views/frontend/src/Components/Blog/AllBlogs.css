@@ -1,0 +1,46 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+
+
+.Section1 {
+    padding: 50px 40px;
+}
+
+.Encabezado {
+    text-align: center;
+    color: #EAFDE7;
+    margin-top: 150px;
+}
+
+.Encabezado > h1 {
+    font-size: 3rem;
+}
+
+.Encabezado > h2 {
+    margin-top: 25px;
+    font-size: 1.25rem;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    padding: 30px;
+    justify-content: center; 
+}
+
+.Blogsrecientes {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #387849;
+}
+
+.card > img {
+    height: 200px;
+}
+
+.card-text {
+    max-height: 200px; /* Ajusta el valor según tus necesidades */
+    overflow: hidden;
+}
+
+
