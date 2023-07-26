@@ -17,7 +17,7 @@ const Home = () => {
             <section className="section1">
                 <div className="Encabezado">
                     <h1>Bienvenidos a Blogapp</h1>
-                    <h2>Cuéntanos sobre tus viajes por el mundo</h2>
+                    <h2>¿Qué vas a contarnos hoy?</h2>
                 </div>
 
                 <div>
