@@ -8,9 +8,7 @@ const LayoutPublic = ()=>{
         <main className="container">
             <Outlet/>
         </main>
-        <footer className="container text-center">
-            footer
-        </footer>
+       
         </>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from "react-bootstrap/Carousel";
+import { Carousel, Card, CardGroup } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import tripch from '../../assets/images/tripch.jpg';
 import tripger from '../../assets/images/tripger.jpg';
@@ -8,8 +8,6 @@ import tripko from '../../assets/images/tripko.jpg';
 import tripmex from '../../assets/images/tripmex.jpg';
 import '../Home/Home.css';
 
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 
 
 
