@@ -1,24 +1,37 @@
 import React from 'react';
+import { Carousel, Card, CardGroup } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Blog/AllBlogs.css';
+import {Link, useLoaderData} from 'react-router-dom'
 
-import {useLoaderData} from 'react-router-dom'
 
 const AllBlogs = () => {
   const {posts} = useLoaderData()
   console.log(posts)
+
+
   return (
     <>
-    {posts.length> 0 ?(
-      posts.map((blog)=>(
-        <div key={blog.id}>
-
-          <h2>{blog.title}</h2>
-          <p>{blog.content}</p>
-          
+      {posts.length > 0 ? (
+        <div className="card-group">
+          {posts.map((blog) => (
+            <div key={blog.id} className="Blogsrecientes">
+              <Card>
+                <Card.Img variant="top" src={blog.image_url} />
+                <Card.Body>
+                  <Card.Title>{blog.title}</Card.Title>
+                  <Card.Text id="pepa">{blog.content}</Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                <Link to={`/blog/${blog.id}`}>Leer más</Link>
+                </Card.Footer>
+              </Card>
+            </div>
+          ))}
         </div>
-      ))
-    ):(
-      <p>No se encontraron Blogs</p>
-    )}
+      ) : (
+        <p>No se encontraron Blogs</p>
+      )}
     </>
   );
 };
