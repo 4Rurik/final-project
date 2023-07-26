@@ -21,6 +21,7 @@ const Home = () => {
 
                 <div>
                     <CardGroup>
+                        
                         <Card className="Blogsrecientes">
                             <Card.Img variant="top" src={tripch} />
                             <Card.Body>
