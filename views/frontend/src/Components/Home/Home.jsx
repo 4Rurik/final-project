@@ -1,4 +1,5 @@
 import React from 'react';
+import { Carousel, Card, CardGroup } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import tripch from '../../assets/images/tripch.jpg';
 import tripger from '../../assets/images/tripger.jpg';
