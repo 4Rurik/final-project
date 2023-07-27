@@ -26,7 +26,7 @@ const Home = () => {
             </section>
 
             <section className="section2">
-                    <h1>Usuarios Aqui</h1>
+                <h1>User</h1>
             </section>
 
         </div>

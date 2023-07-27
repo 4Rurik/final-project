@@ -28,6 +28,11 @@ const Users = () => {
                   </div>
                   <Card.Title>{user.first_name}</Card.Title>
                 </Card.Body>
+                <Card.Footer>
+                <Link to={`/user/${user.id}`}>Ver perfil</Link>
+                </Card.Footer>
+                <br></br>
+                <br></br>
               </Card>
             </Carousel.Item>
           ))}

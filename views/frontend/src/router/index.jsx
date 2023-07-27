@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
     children:[
       {
         index: true, element: <Home/>,
-        loader: loaderBlog,loaderUsers,
+        loader: loaderBlog,
       },
       {
         path:"/blog", element: <Blog/>,
@@ -31,3 +31,4 @@ export const router = createBrowserRouter([
   },
   
 ])
+
