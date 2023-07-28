@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+  const navigate = useNavigate();
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -30,6 +32,8 @@ const Login = () => {
       if (response.ok) {
         console.log(data);
         setMessage('Inicio de sesión exitoso');
+        AuthContext.setIsAuthenticated(true);
+        navigate('/');
       } else {
         setMessage('Inicio de sesión fallido. Verifica tus credenciales.');
       }
