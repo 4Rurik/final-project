@@ -6,7 +6,7 @@ import '../Home/Home.css';
 import '../Blog/AllBlogs/';
 import '../Users/Users';
 import AllBlogs from '../Blog/AllBlogs';
-import Users from '../Users/Users';
+
 
 
 
@@ -23,10 +23,6 @@ const Home = () => {
                 <div>
                    <AllBlogs/>
                 </div>
-            </section>
-
-            <section className="section2">
-                <h1>User</h1>
             </section>
 
         </div>

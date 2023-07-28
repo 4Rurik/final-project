@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
+import Logo from '../assets/logo.jpg';
 const NavBar = () => {
     return(
         <>
         <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="../" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"></img>
+      <img src={Logo} alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></img>
       Blogapp
     </a>
             <NavLink to="/" className="btn btn-outline-primary">Home</NavLink>
