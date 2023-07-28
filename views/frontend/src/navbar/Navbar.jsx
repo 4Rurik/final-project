@@ -10,9 +10,11 @@ const NavBar = () => {
       Blogapp
     </a>
             <NavLink to="/" className="btn btn-outline-primary">Home</NavLink>
-            <NavLink to="/Blog" className="btn btn-outline-primary">Blogs</NavLink>
             <NavLink to="/Users" className="btn btn-outline-primary">Usuarios</NavLink>
             <NavLink to="/Perfil" className="btn btn-outline-primary">Mi Perfil</NavLink>
+            <NavLink to="/Login" className="btn btn-outline-primary">Login</NavLink>
+            <NavLink to="/Signup" className="btn btn-outline-primary">Signup</NavLink>
+
   </div>
 </nav>
         </>
