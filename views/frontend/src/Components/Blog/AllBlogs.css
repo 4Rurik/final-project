@@ -39,7 +39,7 @@
 }
 
 .card-text {
-    max-height: 200px; /* Ajusta el valor según tus necesidades */
+    max-height: 200px;
     overflow: hidden;
 }
 

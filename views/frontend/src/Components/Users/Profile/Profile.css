@@ -11,46 +11,36 @@
     margin-top: 150px;
 }
 
-.Encabezado>h1 {
+.Encabezado > h1 {
     font-size: 3rem;
 }
 
-.Encabezado>h2 {
+.Encabezado > h2 {
     margin-top: 25px;
     font-size: 1.25rem;
 }
 
+.card-group {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    padding: 30px;
+    justify-content: center; 
+}
 
+.Blogsrecientes {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #387849;
+}
 
-.userslide {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #F7E06B;
-    text-align: center; /* Para centrar el contenido dentro del carrusel */
-  }
-  
-  .card > img {
+.card > img {
     height: 200px;
-    object-fit: cover; /* Ajustar el tamaño de la imagen */
-  }
+}
 
-  .userslide {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #F7E06B;
-    text-align: center; /* Para centrar el contenido dentro del carrusel */
-  }
-  
-  .img-container {
-    width: 150px; /* Ajusta el valor para establecer la anchura deseada de las imágenes */
-    height: 150px; /* Ajusta el valor para establecer la altura deseada de las imágenes */
-    border-radius: 50%; /* Hace que las imágenes sean redondas */
-    overflow: hidden; /* Para recortar cualquier contenido que desborde de la imagen redonda */
-    margin: 0 auto; /* Centrar la imagen */
-  }
-  
-  .user-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajustar el tamaño de la imagen */
-  }
+.card-text {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+

@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {useParams, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CrearPost() {
+  const { id } = useParams();
   const navigate = useNavigate();
     const [formData, setFormData] = useState({
       title: '',
       content: '',
       category: 'Spam',
       image_url: '',
-      user_id: '3',
+      user_id: id,
     });
   
     const handleChange = (e) => {
@@ -22,8 +23,7 @@ function CrearPost() {
       e.preventDefault();
       try {
         await axios.post('http://localhost:8000/api/blogs', formData);
-        // Después de hacer el post, puedes redirigir a la página que desees.
-        navigate('/'); // Cambio aquí: Usando navigate en lugar de history.push
+        navigate('/Perfil');
     } catch (error) {
       console.error(error);
     }
@@ -31,6 +31,7 @@ function CrearPost() {
   
     return (
       <div className="container">
+        <Link to={`/Perfil`}>Atras</Link>
         <h2>Crear un nuevo post</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
