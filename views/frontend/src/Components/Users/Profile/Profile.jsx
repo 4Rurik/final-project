@@ -58,6 +58,8 @@ const Profile = () => {
                 </Card.Body>
                 <Card.Footer>
                 <Link to={`/blog/${blog.id}`}>Leer más</Link>
+                <Link to={`/edit/${blog.id}`}>  Edith</Link>
+
                 </Card.Footer>
               </Card>
               </div>
