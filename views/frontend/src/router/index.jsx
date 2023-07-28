@@ -6,7 +6,11 @@ import NotFound from "../Components/NotFound/NotFound";
 import LayoutPublic from "../layout/LayoutPublic";
 import SinglePost, {loaderSinglePost} from "../Components/Blog/Post/SinglePost";
 import Post from "../Components/Blog/Post/Post";
-import Comment from "../Components/Comment/Comment";
+import CrearPost from "../Components/Blog/CreatePost/CreatePost";
+import Profile, { loaderProfile } from "../Components/Users/Profile/Profile";
+import Login from "../Components/Login/Login";
+import Signup from "../Components/Signup/Signup";
+
 
 
 export const router = createBrowserRouter([
@@ -35,11 +39,14 @@ export const router = createBrowserRouter([
         loader: loaderSinglePost,
       },
       {
-        path:"/comments",
-        element: <Comment/>
+        path:"/create",
+        element: <CrearPost/>
+      },
+      {
+        path:"/perfil",
+        element: <Signup/>
       }
     ]
   },
   
 ])
-

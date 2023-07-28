@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function CrearPost() {
-    const history = useHistory();
+  const navigate = useNavigate();
     const [formData, setFormData] = useState({
       title: '',
       content: '',
-      category: '',
+      category: 'Spam',
       image_url: '',
-      user_id: '3', // Puedes cambiar esto por el ID del usuario actual
+      user_id: '3',
     });
   
     const handleChange = (e) => {
@@ -21,11 +23,11 @@ function CrearPost() {
       try {
         await axios.post('http://localhost:8000/api/blogs', formData);
         // Después de hacer el post, puedes redirigir a la página que desees.
-        history.push('/'); // Ejemplo: Redirigir a la página de inicio.
-      } catch (error) {
-        console.error(error);
-      }
-    };
+        navigate('/'); // Cambio aquí: Usando navigate en lugar de history.push
+    } catch (error) {
+      console.error(error);
+    }
+  };
   
     return (
       <div className="container">
@@ -42,7 +44,7 @@ function CrearPost() {
               name="title"
               value={formData.title}
               onChange={handleChange}
-            />
+            ></input>
           </div>
           <div className="mb-3">
             <label htmlFor="content" className="form-label">
@@ -57,19 +59,6 @@ function CrearPost() {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="category" className="form-label">
-              Categoría
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="category"
-              name="category"
-              value={formData.category}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="mb-3">
             <label htmlFor="image_url" className="form-label">
               URL de la imagen
             </label>
@@ -80,7 +69,7 @@ function CrearPost() {
               name="image_url"
               value={formData.image_url}
               onChange={handleChange}
-            />
+            ></input>
           </div>
           <button type="submit" className="btn btn-primary">
             Crear Post

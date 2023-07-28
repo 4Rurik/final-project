@@ -12,7 +12,8 @@ const NavBar = () => {
             <NavLink to="/" className="btn btn-outline-primary">Home</NavLink>
             <NavLink to="/Blog" className="btn btn-outline-primary">Blogs</NavLink>
             <NavLink to="/Users" className="btn btn-outline-primary">Usuarios</NavLink>
-            <NavLink to="/Comments" className="btn btn-outline-primary">Comentarios</NavLink>
+            <NavLink to="/Create" className="btn btn-outline-primary">Crear Post</NavLink>
+            <NavLink to="/Perfil" className="btn btn-outline-primary">Mi Perfil</NavLink>
   </div>
 </nav>
         </>
