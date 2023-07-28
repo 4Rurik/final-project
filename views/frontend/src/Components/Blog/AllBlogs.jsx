@@ -8,13 +8,14 @@ import {Link, useLoaderData} from 'react-router-dom'
 const AllBlogs = () => {
   const {posts} = useLoaderData()
   console.log(posts)
-
+  const activePosts = posts.filter((blog) => blog.status === 'active');
 
   return (
-    <>
-      {posts.length > 0 ? (
+    <>  
+
+      {activePosts.length > 0 ? (
         <div className="card-group">
-          {posts.map((blog) => (
+          {activePosts.map((blog) => (
             <div key={blog.id} className="Blogsrecientes">
               <Card>
                 <Card.Img variant="top" src={blog.image_url} />
@@ -29,9 +30,12 @@ const AllBlogs = () => {
             </div>
           ))}
         </div>
+            
       ) : (
         <p>No se encontraron Blogs</p>
       )}
+
+
     </>
   );
 };

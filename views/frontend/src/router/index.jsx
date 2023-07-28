@@ -13,6 +13,7 @@ import CrearPost from "../Components/Blog/CreatePost/CreatePost";
 import Profile, { loaderProfile } from "../Components/Users/Profile/Profile";
 import Login from "../Components/Login/Login";
 import Signup from "../Components/Signup/Signup";
+import Edit from "../Components/Blog/Edit/Edit";
 
 
 
@@ -57,6 +58,10 @@ export const router = createBrowserRouter([
       {
         path:"/signup",
         element: <Signup/>,
+      },
+      {
+        path:"/edit/:id",
+        element: <Edit/>
       }
     ],
   },

@@ -11,6 +11,23 @@ const Profile = () => {
   const {profile} = useLoaderData();
   const [userBlogs, setUserBlogs] = useState([]);
   console.log(profile);
+  const handleDeleteBlog = async (blogId) => {
+    try {
+     
+      const response = await fetch(`http://localhost:8000/api/blogs/${blogId}`, {
+        method: 'DELETE',
+      });
+
+      if (response.ok) {
+        setUserBlogs((prevBlogs) => prevBlogs.filter((blog) => blog.id !== blogId));
+        console.log('Blog eliminado exitosamente.');
+      } else {
+        console.error('Error al eliminar el blog.');
+      }
+    } catch (error) {
+      console.error('Error al eliminar el blog:', error);
+    }
+  };
 
   useEffect(() => {
     const fetchUserBlogs = async () => {
@@ -59,6 +76,7 @@ const Profile = () => {
                 <Card.Footer>
                 <Link to={`/blog/${blog.id}`}>Leer más</Link>
                 <Link to={`/edit/${blog.id}`}>  Edith</Link>
+                <button onClick={() => handleDeleteBlog(blog.id)}>Eliminar</button>
 
                 </Card.Footer>
               </Card>

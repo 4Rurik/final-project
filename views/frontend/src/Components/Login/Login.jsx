@@ -9,7 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
-
+ 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     if (name === 'email') {
@@ -33,8 +33,7 @@ const Login = () => {
       if (response.ok) {
         console.log(data);
         setMessage('Inicio de sesión exitoso');
-        AuthContext.setIsAuthenticated(true);
-        navigate('/');
+        navigate("/Perfil");
       } else {
         setMessage('Inicio de sesión fallido. Verifica tus credenciales.');
       }
